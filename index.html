@@ -267,7 +267,7 @@
               <label for="message">What brings you here?</label>
               <textarea id="message" name="message" rows="4" placeholder="Tell me a little about what you're exploring..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
               <span>Send Message</span>
               <i class="ph ph-paper-plane-tilt"></i>
             </button>
@@ -276,6 +276,11 @@
             <i class="ph ph-heart-straight"></i>
             <h3>Message Received</h3>
             <p>Thank you for reaching out. I'll be in touch within 24 hours to continue our conversation.</p>
+          </div>
+          <div class="form-error" id="formError" style="display: none;">
+            <i class="ph ph-warning"></i>
+            <h3>Something went wrong</h3>
+            <p>Please try again or email me directly at hello@educationalshaman.com.</p>
           </div>
         </div>
       </div>

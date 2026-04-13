@@ -122,27 +122,46 @@ function initTestimonials() {
 
 // Contact form
 function initContactForm() {
-  const form = document.getElementById('contactForm');
-  const success = document.getElementById('formSuccess');
-  
+  const form     = document.getElementById('contactForm');
+  const success  = document.getElementById('formSuccess');
+  const errorEl  = document.getElementById('formError');
+  const submitBtn = document.getElementById('submitBtn');
+
   if (!form) return;
-  
-  form.addEventListener('submit', (e) => {
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
-    // Collect form data
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-    
-    // Log for now (in production, send to backend/email service)
-    console.log('Form submitted:', data);
-    
-    // Show success
-    form.style.display = 'none';
-    success.style.display = 'block';
-    
-    // Reset for new submissions
-    form.reset();
+
+    submitBtn.disabled = true;
+    submitBtn.querySelector('span').textContent = 'Sending…';
+
+    const data = {
+      name:    document.getElementById('name').value.trim(),
+      email:   document.getElementById('email').value.trim(),
+      message: document.getElementById('message').value.trim(),
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        form.style.display  = 'none';
+        success.style.display = 'block';
+        form.reset();
+      } else {
+        throw new Error('Server error');
+      }
+    } catch (_) {
+      form.style.display  = 'none';
+      errorEl.style.display = 'block';
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.querySelector('span').textContent = 'Send Message';
   });
 }
 
