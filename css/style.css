@@ -239,6 +239,15 @@ a:hover {
   color: var(--color-primary);
 }
 
+.nav-links a.nav-podcast {
+  color: var(--color-accent-warm);
+  font-weight: 500;
+}
+
+.nav-links a.nav-podcast:hover {
+  color: var(--color-accent);
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -396,6 +405,15 @@ a:hover {
   font-size: 1.1rem;
   color: var(--color-text);
   margin-bottom: var(--space-lg);
+}
+
+.about-footnote {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: var(--space-lg);
+  border-left: 2px solid var(--color-primary);
+  padding-left: var(--space-md);
 }
 
 .credentials {
