@@ -1,32 +1,21 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "css/*.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "js/*.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "assets/**",
-      "use": "@vercel/static"
-    }
+    { "src": "api/index.py",  "use": "@vercel/python" },
+    { "src": "*.html",        "use": "@vercel/static" },
+    { "src": "css/*.css",     "use": "@vercel/static" },
+    { "src": "js/*.js",       "use": "@vercel/static" },
+    { "src": "assets/**",     "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/index.py" },
-    { "src": "/css/(.*)", "dest": "/css/$1" },
-    { "src": "/js/(.*)", "dest": "/js/$1" },
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/api/(.*)",       "dest": "/api/index.py" },
+    { "src": "/css/(.*)",       "dest": "/css/$1" },
+    { "src": "/js/(.*)",        "dest": "/js/$1" },
+    { "src": "/assets/(.*)",    "dest": "/assets/$1" },
+    { "src": "/organizations",  "dest": "/organizations.html" },
+    { "src": "/personal",       "dest": "/personal.html" },
+    { "src": "/framework",      "dest": "/framework.html" },
+    { "src": "/about",          "dest": "/about.html" },
+    { "src": "/",               "dest": "/index.html" }
   ]
 }

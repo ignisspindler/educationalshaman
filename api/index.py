@@ -1,5 +1,5 @@
 """
-api/index.py — EducationalShaman API
+api/index.py — Mindwright.ai API
 POST /api/contact  →  sends email via SendGrid
 """
 import json
@@ -11,21 +11,22 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY', '')
-TO_EMAIL         = os.environ.get('CONTACT_TO_EMAIL', 'hello@educationalshaman.com')
-FROM_EMAIL       = os.environ.get('CONTACT_FROM_EMAIL', 'hello@educationalshaman.com')
-FROM_NAME        = 'Educational Shaman Contact Form'
+TO_EMAIL         = os.environ.get('CONTACT_TO_EMAIL', 'eugene@mindwright.ai')
+FROM_EMAIL       = os.environ.get('CONTACT_FROM_EMAIL', 'eugene@mindwright.ai')
+FROM_NAME        = 'Mindwright.ai Contact Form'
 
 
-def _send_email(name: str, email: str, message: str) -> bool:
-    """Send a contact notification via SendGrid's Web API v3."""
+def _send_email(name: str, email: str, interest: str, message: str) -> bool:
+    """Send a contact notification via SendGrid Web API v3."""
     if not SENDGRID_API_KEY:
         print('[SendGrid] SENDGRID_API_KEY not set — skipping email')
         return False
 
-    subject = f'New inquiry from {name or email}'
+    subject = f'Mindwright inquiry: {interest or "General"} — {name or email}'
     body = (
-        f'Name:    {name or "(not provided)"}\n'
-        f'Email:   {email}\n\n'
+        f'Name:     {name or "(not provided)"}\n'
+        f'Email:    {email}\n'
+        f'Interest: {interest or "(not specified)"}\n\n'
         f'Message:\n{message or "(no message)"}\n'
     )
 
@@ -60,20 +61,20 @@ def _send_email(name: str, email: str, message: str) -> bool:
 
 @app.route('/api/contact', methods=['POST'])
 def contact():
-    data    = request.get_json(force=True) or {}
-    name    = data.get('name', '').strip()
-    email   = data.get('email', '').strip()
-    message = data.get('message', '').strip()
+    data     = request.get_json(force=True) or {}
+    name     = data.get('name', '').strip()
+    email    = data.get('email', '').strip()
+    interest = data.get('interest', '').strip()
+    message  = data.get('message', '').strip()
 
     if not email or '@' not in email:
         return jsonify({'error': 'Valid email required'}), 400
 
-    ok = _send_email(name, email, message)
+    ok = _send_email(name, email, interest, message)
     if not ok:
-        # Log submission even if email fails so no lead is lost
-        print(f'[Contact] UNSENT — name={name!r} email={email!r}')
+        print(f'[Contact] UNSENT — name={name!r} email={email!r} interest={interest!r}')
 
-    print(f'[Contact] received from {email}')
+    print(f'[Contact] received from {email}, interest={interest!r}')
     return jsonify({'success': True})
 
 
