@@ -318,7 +318,7 @@ ul, ol { list-style: none; }
 /* ── FRAMEWORK STACK ─────────────────────────────────── */
 .stack-table {
   display: inline-grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   overflow: hidden;
   margin: 0 auto 52px;
   text-align: left;
@@ -327,12 +327,34 @@ ul, ol { list-style: none; }
   background: var(--bg);
 }
 .stack-cell {
-  padding: 13px 36px;
+  padding: 13px 28px;
   background: var(--bg);
   border-bottom: 1px solid rgba(255,255,255,0.035);
 }
 .stack-row-last { border-bottom: none; }
-.stack-cell:nth-child(odd) {
+
+/* Empty top-left corner */
+.stack-corner {
+  border-right: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Column headers: Outer / Inner */
+.stack-col-head {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--amber);
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.04);
+}
+.stack-col-head--inner {
+  color: var(--indigo);
+  border-right: none;
+}
+
+/* Row labels */
+.stack-label {
   display: flex;
   align-items: center;
   font-family: var(--font-mono);
@@ -341,19 +363,31 @@ ul, ol { list-style: none; }
   text-transform: uppercase;
   color: var(--text-muted);
   border-right: 1px solid rgba(255,255,255,0.04);
-  min-width: 130px;
+  min-width: 110px;
 }
-.stack-cell:nth-child(even) {
+
+/* Outer column — amber */
+.stack-outer {
   font-family: var(--font-display);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
-  font-style: normal;
   color: var(--amber-light);
+  border-right: 1px solid rgba(255,255,255,0.04);
 }
-@media (max-width: 480px) {
-  .stack-table { grid-template-columns: 1fr; border-radius: var(--radius); }
-  .stack-cell:nth-child(odd) { border-right: none; padding-bottom: 4px; padding-top: 16px; }
-  .stack-cell:nth-child(even) { padding-top: 2px; }
+
+/* Inner column — indigo */
+.stack-inner {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--indigo-light);
+}
+
+@media (max-width: 600px) {
+  .stack-table { font-size: 13px; }
+  .stack-cell { padding: 11px 16px; }
+  .stack-label { min-width: 80px; font-size: 9px; }
+  .stack-outer, .stack-inner { font-size: 13px; }
 }
 
 /* ── BUTTONS ─────────────────────────────────────────── */
