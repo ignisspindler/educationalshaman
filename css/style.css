@@ -1,5 +1,5 @@
 /* Mindwright.ai — Dark Neumorphism v2 */
-/* Typography: Bodoni Moda (display) · Jost (body) · JetBrains Mono (labels) */
+/* Typography: Playfair Display (display) · Jost (body) · JetBrains Mono (labels) */
 
 /* ── TOKENS ──────────────────────────────────────────── */
 :root {
@@ -50,7 +50,7 @@
   --text-dim:   #4a5a7e;   /* dim — ornamental / footer labels  */
 
   /* ─ Fonts ────────────────────────────────────────── */
-  --font-display: 'Bodoni Moda', 'Times New Roman', Georgia, serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-body:    'Jost', system-ui, sans-serif;
   --font-mono:    'JetBrains Mono', 'Consolas', monospace;
 
@@ -281,7 +281,7 @@ ul, ol { list-style: none; }
   text-align: center;
 }
 
-/* Hero title — Bodoni Moda, editorial scale */
+/* Hero title — Playfair Display, editorial scale */
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(36px, 5.5vw, 68px);
