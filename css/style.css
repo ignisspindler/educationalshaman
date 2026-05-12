@@ -319,6 +319,7 @@ ul, ol { list-style: none; }
 .stack-table {
   display: inline-grid;
   grid-template-columns: auto auto;
+  align-items: center;
   overflow: hidden;
   margin: 0 auto 52px;
   text-align: left;
@@ -327,15 +328,17 @@ ul, ol { list-style: none; }
   background: var(--bg);
 }
 .stack-cell {
-  padding: 13px 36px;
+  padding: 14px 36px;
   background: var(--bg);
   border-bottom: 1px solid rgba(255,255,255,0.035);
+  display: flex;
+  align-items: center;
 }
 .stack-row-last { border-bottom: none; }
 .stack-cell:nth-child(odd) {
   font-family: var(--font-mono);
-  font-size: 9px;
-  letter-spacing: 0.20em;
+  font-size: 11px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-muted);
   border-right: 1px solid rgba(255,255,255,0.04);
@@ -343,9 +346,9 @@ ul, ol { list-style: none; }
 }
 .stack-cell:nth-child(even) {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   color: var(--amber-light);
 }
 @media (max-width: 480px) {
