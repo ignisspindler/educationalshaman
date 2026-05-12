@@ -4,15 +4,15 @@
 /* ── TOKENS ──────────────────────────────────────────── */
 :root {
   /* ─ Surface stack ─────────────────────────────────── */
-  /* All raised elements share --bg; shadow extrudes them  */
-  --bg:             #141826;   /* page floor                    */
-  --surface:        #1b2238;   /* lifted sections / nav mobile  */
-  --surface-inset:  #0f1320;   /* concave inputs / troughs      */
+  /* Midnight navy — dark but breathable, not near-black  */
+  --bg:             #1f2840;   /* page floor                    */
+  --surface:        #273249;   /* lifted sections / nav mobile  */
+  --surface-inset:  #161e34;   /* concave inputs / troughs      */
 
   /* ─ Neumorphic shadow pair ────────────────────────── */
-  /* Spread must straddle --bg with clear differential    */
-  --neu-light:      #26344e;   /* highlight face (top-left)     */
-  --neu-dark:       #090c18;   /* shadow face (bottom-right)    */
+  /* Straddle --bg with clear ~12pt L differential each side */
+  --neu-light:      #32446a;   /* highlight face (top-left)     */
+  --neu-dark:       #0d1122;   /* shadow face (bottom-right)    */
 
   /* ─ Shadow scales (convex raised) ────────────────── */
   --shadow-xs: -3px -3px 7px var(--neu-light),   3px  3px  7px var(--neu-dark);
@@ -27,15 +27,27 @@
   /* ─ Amber ────────────────────────────────────────── */
   --amber:        #c8933c;
   --amber-light:  #dba84f;
-  --amber-dim:    rgba(200, 147, 60, 0.10);
-  --amber-border: rgba(200, 147, 60, 0.28);
-  --amber-glow:   0 0 32px rgba(200, 147, 60, 0.22);
+  --amber-dim:    rgba(200, 147, 60, 0.12);
+  --amber-border: rgba(200, 147, 60, 0.30);
+  --amber-glow:   0 0 32px rgba(200, 147, 60, 0.24);
+
+  /* ─ Indigo accent ────────────────────────────────── */
+  --indigo:        #96a8e8;   /* periwinkle blue — 5.2:1 on --bg   */
+  --indigo-light:  #b0c0f4;
+  --indigo-dim:    rgba(150, 168, 232, 0.12);
+  --indigo-border: rgba(150, 168, 232, 0.28);
+  --indigo-glow:   0 0 28px rgba(150, 168, 232, 0.20);
+
+  /* ─ Violet accent ────────────────────────────────── */
+  --violet:        #b08de8;   /* soft purple — 4.8:1 on --bg       */
+  --violet-light:  #c8a8f4;
+  --violet-dim:    rgba(176, 141, 232, 0.12);
 
   /* ─ Text ─────────────────────────────────────────── */
-  --text:       #ece9e2;   /* warm near-white — 13:1 on --bg   */
-  --text-mid:   #a4acc4;   /* medium — 6.5:1 on --bg           */
-  --text-muted: #8a93ae;   /* muted — 5.2:1 on --bg (WCAG AA)  */
-  --text-dim:   #2b3148;   /* very dim — ornamental only       */
+  --text:       #f0ede6;   /* warm near-white — 12:1 on --bg    */
+  --text-mid:   #bcc5db;   /* medium — 7.2:1 on --bg            */
+  --text-muted: #9da8c4;   /* muted — 5.6:1 on --bg (WCAG AA)   */
+  --text-dim:   #4a5a7e;   /* dim — ornamental / footer labels  */
 
   /* ─ Fonts ────────────────────────────────────────── */
   --font-display: 'Bodoni Moda', 'Times New Roman', Georgia, serif;
@@ -1017,7 +1029,7 @@ ul, ol { list-style: none; }
   font-size: 9px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--text-dim);
+  color: var(--text-muted);
   margin-bottom: 16px;
 }
 .footer-nav-col ul li { margin-bottom: 10px; }
@@ -1039,11 +1051,57 @@ ul, ol { list-style: none; }
 .footer-bottom p {
   font-family: var(--font-mono);
   font-size: 10px;
-  color: var(--text-dim);
+  color: var(--text-muted);
+  opacity: 0.65;
   letter-spacing: 0.05em;
 }
 .footer-bottom a { color: var(--text-muted); transition: color var(--dur-fast); }
 .footer-bottom a:hover { color: var(--amber); }
+
+/* ── ACCENT COLOR CYCLING ────────────────────────────── */
+/* Rotate amber → indigo → violet across repeated elements */
+
+/* Card tags */
+.card:nth-child(2) .card-tag                { color: var(--indigo); }
+.card:nth-child(3) .card-tag                { color: var(--violet); }
+
+/* Card hover glow matches tag color */
+.card:nth-child(2):hover { box-shadow: var(--shadow-lg), 0 0 40px rgba(150, 168, 232, 0.12); }
+.card:nth-child(3):hover { box-shadow: var(--shadow-lg), 0 0 40px rgba(176, 141, 232, 0.12); }
+
+/* Problem markers — pair up every 3 */
+.problem-item:nth-child(3n+2) .problem-marker { color: var(--indigo); }
+.problem-item:nth-child(3n+3) .problem-marker { color: var(--violet); }
+
+/* Steps — cycle step numbers */
+.step:nth-child(3n+2) .step-num  { color: var(--indigo); }
+.step:nth-child(3n+2) .step-label { color: var(--indigo); opacity: 0.70; }
+.step:nth-child(3n+3) .step-num  { color: var(--violet); }
+.step:nth-child(3n+3) .step-label { color: var(--violet); opacity: 0.70; }
+
+/* Service tags */
+.service-item:nth-child(2) .service-tag { color: var(--indigo); }
+.service-item:nth-child(3) .service-tag { color: var(--violet); }
+.service-item:nth-child(5) .service-tag { color: var(--indigo); }
+.service-item:nth-child(6) .service-tag { color: var(--violet); }
+
+/* Triad — each vertex its own color */
+.triad-item:nth-child(1) h4 { color: var(--amber-light); }
+.triad-item:nth-child(2) h4 { color: var(--violet-light); }
+.triad-item:nth-child(3) h4 { color: var(--indigo-light); }
+
+/* Cred badges — soft color variation */
+.cred-badge:nth-child(3n+2) { color: var(--indigo); }
+.cred-badge:nth-child(3n+3) { color: var(--violet); }
+
+/* Article arrows — indigo on hover feels more alive than amber */
+.article-link:hover .article-arrow { color: var(--indigo); transform: translate(3px, -3px); }
+
+/* Rule decorators — add a subtle indigo/violet gradient variant */
+.section--dark .rule::before,
+.section--dark .rule::after {
+  background: linear-gradient(to right, transparent, var(--indigo), transparent);
+}
 
 /* ── REDUCED MOTION ──────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
