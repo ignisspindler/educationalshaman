@@ -1148,6 +1148,164 @@ ul, ol { list-style: none; }
   html { scroll-behavior: auto; }
 }
 
+/* ── GLOSSARY PAGE ───────────────────────────────────── */
+
+/* Alpha quick-jump index */
+.gloss-alpha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 48px 0 60px;
+  justify-content: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.gloss-alpha-pill {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--bg);
+  color: var(--text-muted);
+  box-shadow: var(--shadow-xs);
+  transition: color var(--dur-fast), box-shadow var(--dur-mid) var(--ease);
+  white-space: nowrap;
+}
+.gloss-alpha-pill:hover {
+  color: var(--amber);
+  box-shadow: var(--shadow-sm), 0 0 14px rgba(200,147,60,0.10);
+}
+
+/* Section group */
+.gloss-group {
+  padding: 88px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.gloss-group:last-child { border-bottom: none; }
+.gloss-group-head {
+  margin-bottom: 64px;
+  max-width: 680px;
+}
+.gloss-group-head h2 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 700;
+  letter-spacing: -0.022em;
+  line-height: 0.95;
+  margin-bottom: 18px;
+}
+.gloss-group-head p {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.78;
+}
+
+/* Individual entry */
+.gloss-entry {
+  padding: 56px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.035);
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 64px;
+  align-items: start;
+  scroll-margin-top: 88px;
+}
+.gloss-entry:last-child { border-bottom: none; padding-bottom: 0; }
+.gloss-entry-label {
+  position: sticky;
+  top: 90px;
+}
+.gloss-term {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.6vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--amber-light);
+  margin-bottom: 10px;
+}
+.gloss-origin {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+/* Entry content */
+.gloss-def {
+  font-family: var(--font-display);
+  font-size: clamp(17px, 2vw, 20px);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-mid);
+  line-height: 1.58;
+  margin-bottom: 20px;
+}
+.gloss-text {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.82;
+  margin-bottom: 14px;
+}
+.gloss-text:last-of-type { margin-bottom: 28px; }
+
+/* Related terms */
+.gloss-related {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.gloss-related-label {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+.gloss-pill {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  padding: 5px 12px;
+  background: var(--bg);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-xs);
+  transition: color var(--dur-fast), box-shadow var(--dur-mid) var(--ease);
+}
+.gloss-pill:hover {
+  color: var(--amber);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Section accent color modifiers */
+.gloss-group--indigo .gloss-term         { color: var(--indigo-light); }
+.gloss-group--indigo .eyebrow            { color: var(--indigo); }
+.gloss-group--indigo .gloss-alpha-pill:hover,
+.gloss-group--indigo .gloss-pill:hover   { color: var(--indigo); }
+
+.gloss-group--violet .gloss-term         { color: var(--violet-light); }
+.gloss-group--violet .eyebrow            { color: var(--violet); }
+.gloss-group--violet .gloss-alpha-pill:hover,
+.gloss-group--violet .gloss-pill:hover   { color: var(--violet); }
+
+@media (max-width: 760px) {
+  .gloss-entry {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 44px 0;
+  }
+  .gloss-entry-label { position: static; }
+  .gloss-alpha { padding: 36px 0 44px; }
+}
+
 /* ── UTILITIES ───────────────────────────────────────── */
 .text-center { text-align: center; }
 .mt-8  { margin-top: 8px; }

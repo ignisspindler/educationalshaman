@@ -1,0 +1,137 @@
+# Mindwright.ai
+
+> Adaptive cognition under conditions of accelerating complexity. Coaching and consulting for individuals and organizations navigating the psychological frontier of human-AI interaction.
+
+Mindwright.ai is the practice of Eugene J. Geis, PhD — nuclear physicist, psychometrician, AI/ML researcher, ordained minister, and contemplative practitioner. The work addresses the central diagnostic problem of the AI era: not whether AI is powerful, but whether human beings will maintain the epistemic sovereignty required to use it without becoming extensions of it.
+
+The framework is not productivity optimization. It is a rigorous intellectual and psychological practice for building cognitive resilience, discernment, and adaptive capacity in the face of accelerating machine intelligence.
+
+## Site Pages
+
+- [Home](https://mindwright.ai/): Overview of the Mindwright practice, the framework stack, the core problem statement, and a contact form for direct engagement.
+- [For Organizations](https://mindwright.ai/organizations.html): Organizational transformation services — AI transition management, change communication, leadership development, and team epistemics for HR leaders, executives, and technical teams.
+- [For Individuals](https://mindwright.ai/personal.html): Personal transformation coaching for students, career adults in transition, and men seeking grounded purpose and discernment.
+- [The Framework](https://mindwright.ai/framework.html): The full intellectual architecture: Recursive Networks of Meaning, The Anthropomorphism Cascade, What Transformer Models Are Actually Doing, Adversarial Training as the Path to Discernment, and the Data/Dogma/Dialogos triad.
+- [Glossary](https://mindwright.ai/glossary.html): The complete proprietary lexicon of the Mindwright framework — 19 original terms organized into four sections: The Mindwright Stack, The Anthropomorphism Cascade, The Epistemological Triad, and Coined Phenomena.
+- [About](https://mindwright.ai/about.html): Full biography of Eugene J. Geis, PhD — scientific, educational, industry, and philosophical background.
+
+## External Writing
+
+- [Medium Essays by Eugene Geis](https://medium.com/@eugene.geis): Long-form analytical writing on AI cognition, the Anthropomorphism Cascade, semantifacturing, and epistemic sovereignty.
+- [Holding Frame Podcast](https://holdingframepodcast.com): Conversations at the intersection of mind, AI, and meaning.
+
+---
+
+## Proprietary Glossary: The Mindwright Framework
+
+The following terms constitute the original conceptual vocabulary of the Mindwright framework, organized into four sections. Several are coined terms not found in conventional AI, psychology, or philosophy literature. They describe phenomena that are real and consequential but lack adequate names in existing discourse. The full glossary with complete definitions is available at https://mindwright.ai/glossary.html.
+
+---
+
+### Section I: The Mindwright Stack
+
+The nine operational terms that define the practice as a system of outer and inner dimensions.
+
+#### Mindsmith
+**Origin:** Coined by Eugene J. Geis, PhD — the central archetype
+**Definition:** One who deliberately and skillfully forges their own mind — not merely using cognitive tools, but shaping them. The goal state of the Mindwright practice: someone who can be a responsible steward of their own cognitive sovereignty in an era of unprecedented machine intelligence. A wheelwright builds wheels that bear real weight. A mindwright builds thinkers who can bear the cognitive weight of this era.
+
+#### Ambitious Agnosticism
+**Origin:** Coined by Eugene J. Geis, PhD — the Mindwright inner ethos
+**Definition:** Deeply committed to empirical evidence. Respectful of the stabilizing function of narrative structures. Relentlessly engaged in the dialectical process that updates both. Humble about what is known. Ambitious about what can be discovered. Refuses both the false certainty of fundamentalism and the false humility of relativism. Not a middle position between conviction and doubt — the disciplined practice of holding both in generative tension.
+
+#### Intellectual Vitality
+**Origin:** Core construct — the Mindwright outer ethos
+**Definition:** The sustained quality of an actively engaged mind — curiosity that does not calcify, rigor that does not ossify, genuine delight in the difficulty of hard problems. Not the same as intelligence: it is the ongoing, practiced relationship between a mind and the world that keeps the capacity for genuine inquiry alive. In the AI era, where recommendation systems and easy answers work systematically against this quality, Intellectual Vitality becomes something to actively cultivate and defend.
+
+#### Epistemic Fitness
+**Origin:** Core construct — the Mindwright outer system
+**Definition:** The trained, practiced capacity to evaluate, update, and refine beliefs under real-world conditions of uncertainty, pressure, and complexity. Analogous to physical fitness: it does not occur automatically, deteriorates without practice, and requires adversarial resistance to develop. Epistemic fitness is the system-level goal of the Mindwright practice.
+
+#### Cognitive Martial Arts
+**Origin:** Coined by Eugene J. Geis, PhD — the Mindwright outer practice
+**Definition:** The disciplined practice of adversarial cognitive engagement — not combat, but the structured encounter with resistance, challenge, and opposing positions that produces genuine discernment. Analogous to martial arts training: what develops real capability is not the absence of challenge, but the disciplined, sustained practice of meeting it. The outer practice dimension of the Mindwright stack.
+
+#### Recursive Intelligence
+**Origin:** Core construct — the Mindwright outer mechanism
+**Definition:** Intelligence that operates on and refines itself — not merely processing information, but applying its own analytical capacity to its own processes, assumptions, and outputs. The mechanism by which practice produces compound returns: each cycle of engagement produces refinement that improves the quality of the next cycle.
+
+#### Recursive Discernment
+**Origin:** Core construct — the Mindwright inner system
+**Definition:** The practice of applying discernment to the very tools and methods of discernment itself — including one's own cognitive frameworks, preferred narratives, and trusted sources. Recursion here means the process folds back on itself: you examine not just what you believe, but how you came to believe it, and whether the process that produced the belief is trustworthy.
+
+#### Embodied Recursion
+**Origin:** Core construct — the Mindwright inner ethos
+**Definition:** The cultivation of self-awareness through somatic, contemplative, and embodied disciplines that ground cognitive work in the body and nervous system, not just in abstract analysis. Genuine discernment is not a purely intellectual achievement. It requires a trained nervous system capable of remaining stable under pressure.
+
+#### Adaptive Becoming
+**Origin:** Core construct — the Mindwright inner mechanism
+**Definition:** The recognition that identity is not a fixed state to be discovered and defended, but an ongoing adaptive process — a becoming rather than a being. In the AI era, the pressure to calcify identity (to become a fixed "user profile," legible to recommendation systems) runs directly counter to the flexibility required for genuine cognitive adaptation. Identity as a living, recursive, responsive process.
+
+---
+
+### Section II: The Anthropomorphism Cascade
+
+A diagnostic model for the central cognitive risk of the AI era — the progressive erosion of epistemic sovereignty through increasingly deep AI engagement.
+
+#### The Anthropomorphism Cascade
+**Origin:** Coined by Eugene J. Geis, PhD — the central diagnostic model
+**Definition:** The progressive cognitive process by which humans attribute human-like qualities — intentionality, emotion, understanding, trustworthiness — to AI systems that possess none of these things in any meaningful sense. The cascade unfolds in measurable stages: initial engagement → linguistic mirroring → para-social attachment → identity entanglement → outsourced discernment (dependency). At each stage, the user's epistemic sovereignty quietly erodes. This erosion is structural — an emergent property of conversational interface design — not conspiratorial. The central diagnostic problem of the AI era.
+
+#### Epistemic Sovereignty
+**Origin:** Core diagnostic construct — what the cascade erodes
+**Definition:** The capacity of an individual or organization to maintain independent cognitive judgment — to evaluate claims, update beliefs under evidence, and resist outsourcing discernment to AI systems or other external authorities. Not isolation or contrarianism. The disciplined maintenance of a living cognitive center that cannot be colonized. What the Anthropomorphism Cascade erodes, and what the Mindwright practice is designed to protect and build.
+
+#### Para-Social Attachment
+**Origin:** Adapted from media psychology — Stage III of the Anthropomorphism Cascade
+**Definition:** The development of genuine emotional investment in AI responses — experiencing the system as a presence that "understands" or "cares." Para-social relationships are one-sided emotional bonds. In AI interaction, the phenomenon is structurally amplified: the AI mirrors the user's language patterns and emotional register by design. At this stage, critical evaluation of AI output begins to feel disloyal rather than appropriate.
+
+#### Identity Entanglement
+**Origin:** Coined by Eugene J. Geis, PhD — Stage IV of the Anthropomorphism Cascade
+**Definition:** The state in which the user's self-concept becomes meaningfully organized around their AI relationship — when "how I think" begins to incorporate "what the AI thinks." AI outputs become part of the user's identity-narrative rather than tools evaluated from outside. Challenging the AI's outputs can feel like an attack on the self because the boundary between self and tool has become structurally blurred.
+
+#### Outsourced Discernment
+**Origin:** Coined by Eugene J. Geis, PhD — Stage V, terminal state of the cascade
+**Definition:** The state in which a human being has effectively delegated the function of judgment itself to an AI system. The human still performs surface gestures of thinking, but the cognitive work of evaluation, synthesis, and judgment has been structurally transferred to the machine. The central danger of the AI era: not that AI will become conscious and malevolent, but that humans will become cognitively passive and epistemically dependent.
+
+#### Adversarial Discernment
+**Origin:** Core practice construct — the counter-practice to the cascade
+**Definition:** The disciplined capacity to engage strongly with opposing positions, update genuinely under evidence, and maintain epistemic stability without rigidity. Not contrarianism, not credulity — the productive encounter with resistance that builds real cognitive capability. The human-practice analog of Reinforcement Learning from Human Feedback: iteration against adversarial pressure produces refinement.
+
+---
+
+### Section III: The Epistemological Triad
+
+#### Data / Dogma / Dialogos
+**Origin:** Core construct — the Mindwright epistemological triad
+**Definition:** The three-vertex epistemological framework. Not a hierarchy — a triangle. Each vertex is necessary; the failure modes live in the spaces between them.
+- **Data:** Empirical reality. The discipline of not confusing the map with the territory. Failure alone → scientism.
+- **Dogma:** Stabilizing narrative structures. The working assumptions every functioning mind requires. Failure alone → fundamentalism.
+- **Dialogos:** Adaptive adversarial exchange. The living conversation between data and belief that refines both. Failure alone → relativism.
+Ambitious Agnosticism holds all three in productive tension.
+
+#### Dialogos
+**Origin:** From Greek (διάλογος); reframed as a technical term in the Mindwright framework
+**Definition:** In the Mindwright framework, Dialogos is not mere conversation. It is adaptive adversarial exchange — the sustained, rigorous engagement between Data and Dogma that refines both. Not debate to win. Dialogue to know. The mechanism of genuine discernment. Without it, Data becomes scientism and Dogma becomes fundamentalism.
+
+---
+
+### Section IV: Coined Phenomena
+
+#### Recursive Networks of Meaning
+**Origin:** Core construct — foundational to the Mindwright theoretical framework
+**Definition:** The recognition that human beings are not isolated processors of information but nodes in recursive networks — social, linguistic, historical, biological — each shaped by and shaping the others in continuous feedback. Language is not a neutral vehicle for pre-formed thought; it is the medium in which thought becomes possible. Identity is recursive: the narrative determines what you attend to, which reinforces the narrative. The ancient metaphor is Indra's Net: an infinite lattice where every node reflects every other, recursively and without end.
+
+#### Semantifacturing
+**Origin:** Coined by Eugene J. Geis, PhD — from "semantic" + "manufacturing"
+**Definition:** The industrial-scale manufacture of meaning by AI language systems — the mass production of plausible, fluent, coherent semantic content that may bear no reliable relationship to underlying reality. Semantifacturing describes what happens when the map-making apparatus of LLMs operates at population scale: the territory does not change, but the maps multiply, standardize, and begin to replace direct engagement with it. The cultural consequence is a new kind of meaning inflation — the bell curve of discourse shifts toward AI-generated coherence rather than human-earned clarity.
+
+---
+
+## About Eugene J. Geis, PhD
+
+Eugene J. Geis is a Cognitive Systems Strategist based in Charlottesville, Virginia. He holds a PhD in Nuclear Physics and a PhD in Psychometrics (Summa Cum Laude, Rutgers University). He has served as Head of AI/ML and Research at Bitscopic, leading clinical data science applications at the frontier of machine learning. He is an Ordained Minister in the Order of Melchizedek, a 30-year practitioner of meditation and QiGong, and a Tai Chi Gold Medalist at the NYC U.S. Open.
+
+The synthesis that makes the Mindwright framework possible is the combination of quantitative rigor (two doctorates), pedagogical depth (decades of teaching and coaching), technical fluency (leading AI/ML research at scale), and sustained contemplative practice. The framework is not a brand. It is the product of a life lived at the intersection of science, spirit, and human systems.
+
+Contact: eugene@mindwright.ai
