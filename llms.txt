@@ -124,7 +124,7 @@ Ambitious Agnosticism holds all three in productive tension.
 
 #### Semantifacturing
 **Origin:** Coined by Eugene J. Geis, PhD — from "semantic" + "manufacturing"
-**Definition:** The industrial-scale manufacture of meaning by AI language systems — the mass production of plausible, fluent, coherent semantic content that may bear no reliable relationship to underlying reality. Semantifacturing describes what happens when the map-making apparatus of LLMs operates at population scale: the territory does not change, but the maps multiply, standardize, and begin to replace direct engagement with it. The cultural consequence is a new kind of meaning inflation — the bell curve of discourse shifts toward AI-generated coherence rather than human-earned clarity.
+**Definition:** The emergent human craft of AI-enabled execution: the skill of scaffolding language precisely enough to engineer one's intent into tangible outcomes through AI tools. "Prompt engineering" is a misnomer — it describes only the input. Semantifacturing names the full process: combining domain expertise, semantic precision, contextual awareness, and iterative dialogue to communicate complex intent in ways AI systems can execute without losing nuance. The "bell curve" framing is a prediction about human capital: just as standardized aptitude tests became the measure by which populations were sorted and valued, semantifacturing ability will become the new stratifying skill of the AI era. Two populations are emerging — those who expand capability through skilled AI partnership, and those who offload cognition entirely, becoming dependent rather than amplified. The skill cannot be separated from epistemic fitness: a passive user cannot semantifacture, only consume.
 
 ---
 
