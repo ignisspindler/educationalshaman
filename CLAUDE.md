@@ -36,20 +36,23 @@ vercel --prod   # production
 
 ## Design System
 
-The visual language is dark neumorphism. All tokens are CSS custom properties defined at `:root` in `css/style.css`.
+The visual language is **"Daylight Edition"**: paper-and-ink editorial, like a university press broadsheet. Hairline rules, double newspaper rules, letterpress plates with hard offset shadows, and a faint paper-grain overlay. Dark sections are deliberate "ink plates," not the default. All tokens are CSS custom properties defined at `:root` in `css/style.css`.
 
 **Palette:**
-- Background: `--bg: #1f2840`, surfaces: `--surface: #273249`, inset: `--surface-inset: #161e34`
-- Accents: Amber `--amber: #c8933c`, Indigo `--indigo: #96a8e8`, Violet `--violet: #b08de8`
-- Text: `--text: #e8eaf6`, muted: `--text-muted: #9ba8cc`
+- Paper: `--paper: #f4eee1`, deeper paper: `--paper-2: #ece4d1`
+- Ink: `--ink: #211d16`, body: `--ink-2: #4a4335`, muted: `--ink-3: #79705d`
+- Accents: Ember `--ember: #bf4d1e` (primary), Steel `--steel: #3f5573` (links), Plum `--plum: #6b4d7a` (tertiary)
+- Legacy aliases (`--text`, `--text-muted`, `--amber`, `--indigo`, etc.) map to the new palette and are **re-scoped inside `.section--dark`/`.cta-band`** so inline styles adapt automatically on ink plates. Keep using the aliases in inline styles.
 
-**Typography:** Playfair Display (headings), Jost (body), JetBrains Mono (labels/badges). Loaded from Google Fonts in each HTML `<head>`.
+**Typography:** Fraunces (display, variable optical size), Newsreader (body), IBM Plex Mono (labels/badges/eyebrows). Loaded from Google Fonts in each HTML `<head>`.
 
-**Neumorphic shadows:** Use `--shadow-xs/sm/md/lg` paired variables (light + dark). Never use raw `box-shadow` values — always reference the tokens.
+**Shadows/borders:** No soft shadows. Plates use `1.5px solid var(--ink)` borders with hard offset shadows (e.g. `8px 8px 0 var(--paper-2)`); hovers shift `translate(-2px,-2px)` with an ember offset shadow.
 
-**Layout:** Max-width 1080px, centered. Mobile breakpoints at 600px, 640px, 760px, 820px, 860px. Fluid type via `clamp()`. Hamburger nav activates at 860px.
+**Layout:** Max-width 1140px, centered. Hamburger nav activates at 860px; other breakpoints at 640/720/760/820/980px. Fluid type via `clamp()`. Scroll reveals are progressive (`.js .rise` pattern in `main.js`); append `?static` to any page URL to disable animations for screenshots.
 
-**Canonical reference:** `SPEC.md` documents the full component inventory, color rationale, and WCAG AA contrast notes.
+**Signature elements:** token-stream texture behind the home hero (`.stream`), the framework as a lab specimen table (`.specimen`) with an inverse-mirror row hover, ghost outlined wordmark in the footer (`.ghost-mark`), asterism dividers (`.rule`).
+
+**Note:** `SPEC.md` and `proposal-facelift.html` document the previous dark-neumorphism design and the facelift study that replaced it; both are historical.
 
 ## Content
 

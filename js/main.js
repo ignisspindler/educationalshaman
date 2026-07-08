@@ -3,6 +3,23 @@
 (function () {
   'use strict';
 
+  // ── SCROLL REVEALS (progressive: content visible without JS) ──
+  // append ?static to the URL to disable, e.g. for screenshots
+  if ('IntersectionObserver' in window && !location.search.includes('static')) {
+    document.documentElement.classList.add('js');
+    const targets = document.querySelectorAll(
+      '.card, .problem-item, .service-item, .step, .triad-item, ' +
+      '.bio-section, .book-note, .about-strip, .section-head, .specimen'
+    );
+    targets.forEach(el => el.classList.add('rise'));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(el => io.observe(el));
+  }
+
   // ── NAV SCROLL STATE ────────────────────────────────────
   const nav = document.querySelector('.site-nav');
   if (nav) {
