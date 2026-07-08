@@ -12,13 +12,17 @@ The framework is not productivity optimization. It is a rigorous intellectual an
 - [For Organizations](https://mindwright.ai/organizations.html): Organizational transformation services — AI transition management, change communication, leadership development, and team epistemics for HR leaders, executives, and technical teams.
 - [For Individuals](https://mindwright.ai/personal.html): Personal transformation coaching for students, career adults in transition, and men seeking grounded purpose and discernment.
 - [The Framework](https://mindwright.ai/framework.html): The full intellectual architecture: Recursive Networks of Meaning, The Anthropomorphism Cascade, What Transformer Models Are Actually Doing, Adversarial Training as the Path to Discernment, and the Data/Dogma/Dialogos triad.
-- [Glossary](https://mindwright.ai/glossary.html): The complete proprietary lexicon of the Mindwright framework — 20 original terms organized into four sections: The Mindwright Stack, The Anthropomorphism Cascade, The Epistemological Triad, and Coined Phenomena.
+- [Glossary](https://mindwright.ai/glossary.html): The complete proprietary lexicon of the Mindwright framework — 22 original terms organized into four sections: The Mindwright Stack, The Anthropomorphism Cascade, The Epistemological Triad, and Coined Phenomena.
 - [About](https://mindwright.ai/about.html): Full biography of Eugene J. Geis, PhD — scientific, educational, industry, and philosophical background.
 
 ## External Writing
 
 - [Medium Essays by Eugene Geis](https://medium.com/@eugene.geis): Long-form analytical writing on AI cognition, the Anthropomorphism Cascade, semantifacturing, and epistemic sovereignty.
 - [Holding Frame Podcast](https://holdingframepodcast.com): Conversations at the intersection of mind, AI, and meaning.
+
+## Forthcoming Book (In Progress)
+
+Eugene Geis is writing a book that develops the framework's central claim at full length: AI is the inverse mirror. Every capability it demonstrates — fluency, recall, pattern completion at scale — is cognition stripped of its experiential core, and what it cannot do is not a bug but the feature that defines us. The book develops Participation (the human response to the Prediction Paradigm) as its core argument, and introduces LLMorphism: the inversion of anthropomorphism, using the machine's architecture as a vocabulary for the human rather than projecting human qualities onto the machine. The book will serve as the entry point to the Mindwright practice described on this site.
 
 ---
 
@@ -30,15 +34,23 @@ The following terms constitute the original conceptual vocabulary of the Mindwri
 
 ### Section I: The Mindwright Stack
 
-The nine operational terms that define the practice as a system of outer and inner dimensions.
+The operational terms that define the practice as a system of outer and inner dimensions. The four inner terms — Adaptive Recursion, Ambitious Agnosticism, Embodied Becoming, and Recursive Discernment — are the dimensions of Participation, the human response to the Prediction Paradigm.
 
 #### Mindsmith
 **Origin:** Coined by Eugene J. Geis, PhD — the central archetype
 **Definition:** One who deliberately and skillfully forges their own mind — not merely using cognitive tools, but shaping them. The goal state of the Mindwright practice: someone who can be a responsible steward of their own cognitive sovereignty in an era of unprecedented machine intelligence. A wheelwright builds wheels that bear real weight. A mindwright builds thinkers who can bear the cognitive weight of this era.
 
+#### Prediction Paradigm
+**Origin:** From contemporary social theory of infrastructure — the condition Participation answers
+**Definition:** The organizing logic of contemporary technical infrastructure: systems built to anticipate human behavior, and in anticipating it, to shape it. Prediction does not merely describe the person — it produces the person it describes. Recommendation engines, feeds, predictive text, and behavioral profiles arrange the world you encounter so that the forecast comes true. Prediction rewards predictability: the infrastructure profits when you become easier to compute, and it is engineered at every layer to make you so. The Anthropomorphism Cascade describes what this dynamic does inside a single AI relationship; the Prediction Paradigm names the larger infrastructural condition in which every such relationship now takes place.
+
+#### Participation
+**Origin:** Core construct — the human response to the Prediction Paradigm
+**Definition:** The practice of remaining an active author of meaning inside infrastructure built to anticipate you. Where the Prediction Paradigm treats the person as an object whose next state can be computed, Participation is the discipline of staying a subject. Not withdrawal — there is no opting out of predictive infrastructure — but engaged practice on the practitioner's terms. Participation is trained along four dimensions: Adaptive Recursion (return to Participation, each pass conditioned on the last), Ambitious Agnosticism (the other door), Embodied Becoming (the body as the site of transformation), and Recursive Discernment (iterative refinement of judgment). These four constitute the inner column of the Mindwright stack.
+
 #### Ambitious Agnosticism
-**Origin:** Coined by Eugene J. Geis, PhD — the Mindwright inner ethos
-**Definition:** Deeply committed to empirical evidence. Respectful of the stabilizing function of narrative structures. Relentlessly engaged in the dialectical process that updates both. Humble about what is known. Ambitious about what can be discovered. Refuses both the false certainty of fundamentalism and the false humility of relativism. Not a middle position between conviction and doubt — the disciplined practice of holding both in generative tension.
+**Origin:** Coined by Eugene J. Geis, PhD — the Mindwright inner ethos; a dimension of Participation
+**Definition:** Deeply committed to empirical evidence. Respectful of the stabilizing function of narrative structures. Relentlessly engaged in the dialectical process that updates both. Humble about what is known. Ambitious about what can be discovered. Refuses both the false certainty of fundamentalism and the false humility of relativism. Not a middle position between conviction and doubt — the disciplined practice of holding both in generative tension. As a dimension of Participation, it is the other door: where the Prediction Paradigm offers the exit of a pre-computed answer, Ambitious Agnosticism holds the question open, on purpose, with rigor.
 
 #### Intellectual Vitality
 **Origin:** Core construct — the Mindwright outer ethos
@@ -57,16 +69,16 @@ The nine operational terms that define the practice as a system of outer and inn
 **Definition:** Intelligence that operates on and refines itself — not merely processing information, but applying its own analytical capacity to its own processes, assumptions, and outputs. The mechanism by which practice produces compound returns: each cycle of engagement produces refinement that improves the quality of the next cycle.
 
 #### Recursive Discernment
-**Origin:** Core construct — the Mindwright inner system
-**Definition:** The practice of applying discernment to the very tools and methods of discernment itself — including one's own cognitive frameworks, preferred narratives, and trusted sources. Recursion here means the process folds back on itself: you examine not just what you believe, but how you came to believe it, and whether the process that produced the belief is trustworthy.
+**Origin:** Core construct — the Mindwright inner system; a dimension of Participation
+**Definition:** The practice of applying discernment to the very tools and methods of discernment itself — including one's own cognitive frameworks, preferred narratives, and trusted sources. Recursion here means the process folds back on itself: you examine not just what you believe, but how you came to believe it, and whether the process that produced the belief is trustworthy. As a dimension of Participation, it is the iterative refinement of judgment: each act of judging becomes material for the next, and judgment sharpened this way remains the practitioner's own.
 
-#### Embodied Recursion
-**Origin:** Core construct — the Mindwright inner ethos
-**Definition:** The cultivation of self-awareness through somatic, contemplative, and embodied disciplines that ground cognitive work in the body and nervous system, not just in abstract analysis. Genuine discernment is not a purely intellectual achievement. It requires a trained nervous system capable of remaining stable under pressure.
+#### Embodied Becoming
+**Origin:** Core construct — the Mindwright inner ethos; a dimension of Participation
+**Definition:** The body as the site of transformation. Change that is real happens in the nervous system, not just in the concepts a person can recite. Genuine discernment requires a trained nervous system capable of remaining stable under pressure, cultivated through somatic, contemplative, and embodied disciplines. A belief updated only in language has not yet been updated; transformation that has not reached the body has not yet occurred. The Prediction Paradigm models the behavioral surface of a person, but the slow somatic work of becoming happens beneath what the infrastructure can see or compute.
 
-#### Adaptive Becoming
-**Origin:** Core construct — the Mindwright inner mechanism
-**Definition:** The recognition that identity is not a fixed state to be discovered and defended, but an ongoing adaptive process — a becoming rather than a being. In the AI era, the pressure to calcify identity (to become a fixed "user profile," legible to recommendation systems) runs directly counter to the flexibility required for genuine cognitive adaptation. Identity as a living, recursive, responsive process.
+#### Adaptive Recursion
+**Origin:** Core construct — the Mindwright inner mechanism; a dimension of Participation
+**Definition:** The return to Participation, each pass conditioned on the last. The practice is not a state to be achieved but a loop to be run: each pass is initialized by everything the previous passes produced — refined judgments, a recalibrated nervous system, questions that stayed open — so growth compounds rather than repeats. The Prediction Paradigm also runs loops on the person (each click conditions the next recommendation); Adaptive Recursion is the deliberate counterpart, in which the practitioner chooses the loop and what each pass is allowed to change.
 
 ---
 

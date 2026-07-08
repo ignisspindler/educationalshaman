@@ -1029,6 +1029,39 @@ ul, ol { list-style: none; }
   line-height: 1.72;
 }
 
+/* ── BOOK NOTE (quiet aside) ─────────────────────────── */
+.book-note {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 44px 48px;
+  text-align: center;
+  background: var(--surface-inset);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--inset-md);
+}
+.book-note .eyebrow { margin-bottom: 16px; }
+.book-note-line {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(19px, 2.4vw, 24px);
+  line-height: 1.45;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+.book-note-sub {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+.book-note-sub a {
+  color: var(--indigo);
+  border-bottom: 1px solid var(--indigo-border);
+}
+.book-note-sub a:hover { color: var(--indigo-light); }
+@media (max-width: 600px) { .book-note { padding: 36px 24px; } }
+
 /* ── FOOTER ──────────────────────────────────────────── */
 .site-footer {
   background: var(--surface);
