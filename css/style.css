@@ -377,13 +377,45 @@ h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.015em; }
 .specimen td.outer { font-family: var(--font-display); font-weight: 500; width: 41%; }
 .specimen td.inner { font-family: var(--font-display); font-style: italic; font-weight: 420; color: var(--ember-deep); width: 41%; }
 .specimen tbody tr { transition: background .14s, color .14s; }
-.specimen tbody tr:hover { background: var(--ink); }
-.specimen tbody tr:hover th { color: var(--paper-2); }
-.specimen tbody tr:hover td.outer { color: var(--paper); }
-.specimen tbody tr:hover td.inner { color: var(--ember); }
+@media (hover: hover) {
+  .specimen tbody tr:hover { background: var(--ink); }
+  .specimen tbody tr:hover th { color: var(--paper-2); }
+  .specimen tbody tr:hover td.outer { color: var(--paper); }
+  .specimen tbody tr:hover td.inner { color: var(--ember); }
+}
+
+/* Below 640px three columns have nowhere to go, so each row becomes a
+   stacked entry: row name as the heading, outer and inner labelled beneath. */
 @media (max-width: 640px) {
-  .specimen th, .specimen td { padding: 12px 12px; font-size: 13.5px; }
-  .specimen tbody th { display: none; }
+  .specimen-caption { padding: 11px 15px; font-size: 9.5px; letter-spacing: 0.12em; }
+  .specimen thead { display: none; }
+  .specimen table, .specimen tbody, .specimen tbody tr,
+  .specimen tbody th, .specimen tbody td { display: block; width: auto; }
+  .specimen tbody th, .specimen tbody td { padding: 0; border-bottom: none; }
+  .specimen tbody td.outer, .specimen tbody td.inner { width: auto; }
+
+  .specimen tbody tr { padding: 15px 16px 17px; border-bottom: 1px solid var(--hair); }
+  .specimen tbody tr:last-child { border-bottom: none; }
+
+  .specimen tbody th { font-size: 10px; color: var(--ember); margin-bottom: 10px; }
+
+  .specimen tbody td {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+    align-items: baseline;
+    font-size: 16.5px;
+    line-height: 1.26;
+  }
+  .specimen tbody td + td { margin-top: 8px; }
+  .specimen tbody td::before {
+    font-family: var(--font-mono);
+    font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    font-style: normal; font-weight: 400;
+    color: var(--ink-3);
+  }
+  .specimen tbody td.outer::before { content: "Outer"; }
+  .specimen tbody td.inner::before { content: "Inner"; }
 }
 
 /* ── PROBLEM GRID (ink) ──────────────────────────────── */
@@ -422,12 +454,14 @@ h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.015em; }
 .card-grid--2 { grid-template-columns: 1fr 1fr; }
 @media (max-width: 980px) { .card-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 720px) { .card-grid, .card-grid--2 { grid-template-columns: 1fr; } }
+@media (max-width: 400px) { .card { padding: 28px 22px 30px; } }
 .card {
   background: var(--paper);
   border: 1.5px solid var(--ink);
   padding: 36px 34px 38px;
   box-shadow: 7px 7px 0 rgba(33, 29, 22, 0.55);
   display: flex; flex-direction: column; align-items: flex-start;
+  min-width: 0; /* grid items default to min-width:auto and won't shrink to the track */
   transition: transform .18s ease, box-shadow .18s ease;
   /* cards keep paper identity even on ink plates */
   --text:       var(--ink);
